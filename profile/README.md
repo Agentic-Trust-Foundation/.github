@@ -1,39 +1,47 @@
 # Agentic Trust Foundation
 
-Open protocols and reference implementations for trust, delegated authority, authorization, policy, provenance, and accountability in the agentic internet.
+Open protocols and reference implementations for trust, delegated authority, authorization, policy, provenance, accountability, and agentic commerce infrastructure.
 
 ## Projects
 
 ### Agentic Trust Foundation
-The protocol and reference implementation layer for agent identity, delegation, authorization, capability, trust, policy, consent, revocation, provenance, auditability, and human control.
+Protocol and reference implementation for agent identity, delegation, authorization, capability, trust, consent, revocation, provenance, auditability, and human control.
 
 ### Agent-Pay
-The financial control and payment execution layer. It consumes delegated authority from the trust layer and applies financial policy, budgets, approvals, payment authentication, transaction processing, settlement, reconciliation, and ledgering.
+Financial control and payment execution layer built on delegated authority from ATF.
 
-## Project boundary
+### Agent Site Adapter
+Public integration layer for websites and services that want to expose authenticated, capability-aware interfaces to agents. Adapter installation is not, by itself, a trust assertion.
 
-ATF answers **"who/what is authorized to do what, under which delegated authority and conditions?"**
+### Agent-Pay Iran
+Private product/deployment profile for applying Agent-Pay to the Iranian operational and financial environment.
 
-Agent-Pay answers **"may this financial operation proceed, under which financial controls, and how is the resulting economic state recorded?"**
+## Project architecture
 
-Neither project requires a single centralized trust authority.
+```
+ATF
+ |
+ +--> Site Adapter --> Websites / Services
+ |
+ +--> Agent-Pay --> Local / Provider Profiles
+                       |
+                       +--> Agent-Pay Iran
+```
 
-## Current focus
-
-- V1 protocol and reference implementation hardening
-- Cross-project interoperability
-- Conformance vectors and machine-readable schemas
-- Security and threat-model documentation
-- Open-source contributor workflows
-- Versioned protocol evolution
+The ecosystem is protocol-first and intentionally avoids requiring one centralized trust authority.
 
 ## Repositories
 
-- [agentic-trust](https://github.com/Agentic-Trust-Foundation/agentic-trust)
-- [agent-pay](https://github.com/Agentic-Trust-Foundation/agent-pay)
+- agentic-trust
+- agent-pay
+- agent-site-adapter
 
-Both repositories are public and licensed under Apache-2.0.
+Private project planning and country-specific product work are maintained separately.
+
+## Documentation
+
+The private `project-docs` repository is the master project memory containing cross-project architecture, decisions, timeline, research, and roadmaps.
 
 ## Contributing
 
-Please read each repository's CONTRIBUTING.md, SECURITY.md, and AGENTS.md before making changes.
+Please read each public repository's CONTRIBUTING.md, SECURITY.md, and AGENTS.md before making changes.

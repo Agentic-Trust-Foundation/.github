@@ -2,6 +2,14 @@
 
 Open protocols and reference implementations for trust, delegated authority, authorization, policy, provenance, accountability, and agentic commerce infrastructure.
 
+## Current status
+
+- **ATF — V2 FINAL (Phase 42)**
+- **Agent-Pay — V2 FINAL (Phase 43)**
+- **Agent Site Adapter — V1 FINAL**
+- **Agent-Pay Iran — deployment-profile validation baseline; production activation remains evidence-gated**
+- **Project Docs — synchronized master documentation**
+
 ## Projects
 
 ### Agentic Trust Foundation
@@ -19,13 +27,13 @@ Private product/deployment profile for applying Agent-Pay to the Iranian operati
 ## Project architecture
 
 ```
-ATF
+ATF V2 Final
  |
  +--> Site Adapter --> Websites / Services
  |
- +--> Agent-Pay --> Local / Provider Profiles
-                       |
-                       +--> Agent-Pay Iran
+ +--> Agent-Pay V2 Final --> Local / Provider Profiles
+                              |
+                              +--> Agent-Pay Iran
 ```
 
 The ecosystem is protocol-first and intentionally avoids requiring one centralized trust authority.

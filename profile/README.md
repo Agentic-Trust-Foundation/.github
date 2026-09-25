@@ -1,6 +1,10 @@
 # Agentic Trust Foundation
 
+**Trust, Delegation & Access Layer for the Agentic Internet.**
+
 Open protocols and reference implementations for trust, delegated authority, authorization, policy, provenance, accountability, and agentic commerce infrastructure.
+
+**Canonical project definition:** the Agentic Trust Foundation defines the trust/authority layer for AI agents acting on behalf of users and organizations. Agent-Pay is the financial control/execution layer built on that authority. The ecosystem is not a bank, payment processor, blockchain, LLM framework, API gateway, or replacement for OAuth/MCP/A2A.
 
 ## Current status
 
@@ -45,6 +49,10 @@ The ecosystem is protocol-first and intentionally avoids requiring one centraliz
 - agent-site-adapter
 
 Private project planning and country-specific product work are maintained separately.
+
+## Canonical project context
+
+Start with the public project definition in the agentic-trust repository: PROJECT.md, WHY.md, AI-CONTEXT.md, GLOSSARY.md, and STATUS.md. These documents distinguish project intent from implementation evidence and external production/adoption evidence.
 
 ## Documentation
 
